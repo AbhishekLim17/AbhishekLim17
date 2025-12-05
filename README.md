@@ -10,7 +10,7 @@ AI/ML Enthusiast • Full-Stack Developer • Problem Solver
 
 ---
 
-**[LinkedIn](https://www.linkedin.com/in/abhishek-limbachiya-18mar02/)** • **[Email](mailto:abhishek.limbachiya.edu@gmail.com)** • **[GitHub](https://github.com/abhishek-limbachiya)**
+**[LinkedIn](https://www.linkedin.com/in/abhishek-limbachiya-18mar02/)** • **[Email](mailto:abhishek.limbachiya.edu@gmail.com)** • **[GitHub](https://github.com/AbhishekLim17)**
 
 </div>
 
