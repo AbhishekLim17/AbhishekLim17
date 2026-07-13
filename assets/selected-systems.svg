@@ -1,0 +1,145 @@
+<svg viewBox="0 0 1000 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Selected Systems: AI Customer Support, Lead Intelligence, Enterprise Dashboard, Workflow Automation">
+  <defs>
+    <pattern id="sysGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#141414" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="sysGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF7A00" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FF7A00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1000" height="430" fill="#050505"/>
+  <rect width="1000" height="430" fill="url(#sysGrid)"/>
+
+  <!-- section header -->
+  <text x="30" y="30" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" fill="#8A8A8A" letter-spacing="3">SELECTED.SYSTEMS</text>
+  <line x1="230" y1="24" x2="970" y2="24" stroke="#2A2A2A" stroke-width="1"/>
+
+  <!-- ===== CARD 1: AI Customer Support Platform ===== -->
+  <g>
+    <rect x="30" y="52" width="460" height="160" rx="5" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+    <rect x="30" y="52" width="3" height="160" rx="1" fill="#FF7A00"/>
+
+    <!-- header bar -->
+    <rect x="30" y="52" width="460" height="32" rx="5" fill="#101010"/>
+    <rect x="30" y="80" width="460" height="4" fill="#0A0A0A"/>
+    <circle cx="52" cy="68" r="3" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="66" y="72" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A" letter-spacing="2">PRODUCTION SYSTEM</text>
+
+    <!-- title -->
+    <text x="50" y="110" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="16" font-weight="700" fill="#FFFFFF">AI Customer Support Platform</text>
+
+    <!-- description -->
+    <text font-family="'JetBrains Mono', monospace" font-size="11" fill="#8A8A8A">
+      <tspan x="50" y="136">Production chatbot with multi-model routing,</tspan>
+      <tspan x="50" y="152">tool calling, memory and retrieval-augmented</tspan>
+      <tspan x="50" y="168">generation.</tspan>
+    </text>
+
+    <!-- tech indicators -->
+    <g transform="translate(310,168)">
+      <circle r="2" fill="#FF7A00" opacity="0.5"/>
+      <text x="8" y="4" font-family="'JetBrains Mono', monospace" font-size="9" fill="#8A8A8A">RAG · Routing · Memory</text>
+    </g>
+  </g>
+
+  <!-- ===== CARD 2: AI Lead Intelligence Platform ===== -->
+  <g>
+    <rect x="510" y="52" width="460" height="160" rx="5" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+    <rect x="510" y="52" width="3" height="160" rx="1" fill="#FF7A00"/>
+
+    <rect x="510" y="52" width="460" height="32" rx="5" fill="#101010"/>
+    <rect x="510" y="80" width="460" height="4" fill="#0A0A0A"/>
+    <circle cx="532" cy="68" r="3" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.1s" repeatCount="indefinite" begin="0.4s"/>
+    </circle>
+    <text x="546" y="72" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A" letter-spacing="2">PRODUCTION SYSTEM</text>
+
+    <text x="530" y="110" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="16" font-weight="700" fill="#FFFFFF">AI Lead Intelligence Platform</text>
+
+    <text font-family="'JetBrains Mono', monospace" font-size="11" fill="#8A8A8A">
+      <tspan x="530" y="136">Automated lead discovery, enrichment and</tspan>
+      <tspan x="530" y="152">personalized outreach powered by LLMs</tspan>
+      <tspan x="530" y="168">and structured workflows.</tspan>
+    </text>
+
+    <g transform="translate(790,168)">
+      <circle r="2" fill="#FF7A00" opacity="0.5"/>
+      <text x="8" y="4" font-family="'JetBrains Mono', monospace" font-size="9" fill="#8A8A8A">LLMs · APIs · Pipelines</text>
+    </g>
+  </g>
+
+  <!-- ===== CARD 3: Enterprise AI Dashboard ===== -->
+  <g>
+    <rect x="30" y="232" width="460" height="160" rx="5" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+    <rect x="30" y="232" width="3" height="160" rx="1" fill="#FF7A00"/>
+
+    <rect x="30" y="232" width="460" height="32" rx="5" fill="#101010"/>
+    <rect x="30" y="260" width="460" height="4" fill="#0A0A0A"/>
+    <circle cx="52" cy="248" r="3" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite" begin="0.8s"/>
+    </circle>
+    <text x="66" y="252" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A" letter-spacing="2">PRODUCTION SYSTEM</text>
+
+    <text x="50" y="290" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="16" font-weight="700" fill="#FFFFFF">Enterprise AI Dashboard</text>
+
+    <text font-family="'JetBrains Mono', monospace" font-size="11" fill="#8A8A8A">
+      <tspan x="50" y="316">Multi-tenant dashboard with authentication,</tspan>
+      <tspan x="50" y="332">API management, usage analytics and</tspan>
+      <tspan x="50" y="348">role-based access controls.</tspan>
+    </text>
+
+    <g transform="translate(310,348)">
+      <circle r="2" fill="#FF7A00" opacity="0.5"/>
+      <text x="8" y="4" font-family="'JetBrains Mono', monospace" font-size="9" fill="#8A8A8A">Auth · RBAC · Analytics</text>
+    </g>
+  </g>
+
+  <!-- ===== CARD 4: Workflow Automation Engine ===== -->
+  <g>
+    <rect x="510" y="232" width="460" height="160" rx="5" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+    <rect x="510" y="232" width="3" height="160" rx="1" fill="#FF7A00"/>
+
+    <rect x="510" y="232" width="460" height="32" rx="5" fill="#101010"/>
+    <rect x="510" y="260" width="460" height="4" fill="#0A0A0A"/>
+    <circle cx="532" cy="248" r="3" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.3s" repeatCount="indefinite" begin="1.2s"/>
+    </circle>
+    <text x="546" y="252" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A" letter-spacing="2">PRODUCTION SYSTEM</text>
+
+    <text x="530" y="290" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="16" font-weight="700" fill="#FFFFFF">Workflow Automation Engine</text>
+
+    <text font-family="'JetBrains Mono', monospace" font-size="11" fill="#8A8A8A">
+      <tspan x="530" y="316">Event-driven automation pipelines connecting</tspan>
+      <tspan x="530" y="332">language models, external APIs and core</tspan>
+      <tspan x="530" y="348">business systems.</tspan>
+    </text>
+
+    <g transform="translate(790,348)">
+      <circle r="2" fill="#FF7A00" opacity="0.5"/>
+      <text x="8" y="4" font-family="'JetBrains Mono', monospace" font-size="9" fill="#8A8A8A">LLMs · Events · APIs</text>
+    </g>
+  </g>
+
+  <!-- connecting data flow particles -->
+  <circle r="2" fill="#FF7A00">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M30,132 L490,132 L490,312 L30,312"/>
+    <animate attributeName="opacity" values="0;0.6;0.6;0" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2" fill="#FF7A00">
+    <animateMotion dur="4.5s" repeatCount="indefinite" begin="1.5s" path="M510,132 L970,132 L970,312 L510,312"/>
+    <animate attributeName="opacity" values="0;0.6;0.6;0" dur="4.5s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+
+  <!-- corner accents -->
+  <g stroke="#FF7A00" stroke-width="1.5" fill="none">
+    <path d="M 0 14 L 0 0 L 14 0"/>
+    <path d="M 986 0 L 1000 0 L 1000 14"/>
+    <path d="M 1000 416 L 1000 430 L 986 430"/>
+    <path d="M 14 430 L 0 430 L 0 416"/>
+  </g>
+</svg>

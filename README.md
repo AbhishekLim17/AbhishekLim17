@@ -8,35 +8,46 @@
   <img src="./assets/status-bar.svg" alt="AI System Status: Founder · AI Engineer, building production AI systems" width="100%" />
 </div>
 
-<br/>
+<br/><br/>
 
 ## About
 
-I design and build AI systems that ship — not notebooks that demo well once.
+I build production AI systems — LLM-powered applications, multi-model routing
+architectures, AI agents, and intelligent automation designed to operate at scale.
 
-Most of my work sits at the intersection of LLM infrastructure and practical
-software engineering: routing requests across multiple model providers,
-handling rate limits and fallbacks gracefully, and wiring that into backend
-systems that businesses actually run in production.
+My engineering work focuses on the layer most teams skip: reliable LLM routing
+with provider fallback chains, AI agent orchestration, structured tool calling,
+retrieval-augmented generation, and the backend infrastructure required to keep
+these systems stable under real-world conditions.
 
-I operate as an independent AI/IT consultant under the **ThinkBridge** brand,
-working with small businesses, startups, and international clients on AI
-chatbot systems, automation, and full-stack delivery. I'm also currently
-deepening this work through a Master's program in Artificial Intelligence,
-which feeds directly back into how I approach routing strategy, evaluation,
-and system reliability.
+I operate at the intersection of AI engineering and scalable software
+architecture — building systems where language models, APIs, and business logic
+converge into production-grade software. Not research prototypes. Not demos.
+Systems that ship and stay running.
 
-I'd rather maintain one system that works than demo ten that don't.
-
-<br/>
+<br/><br/>
 
 <div align="center">
   <img src="./assets/divider.svg" alt="" width="100%" />
 </div>
 
-## Currently Building
+<br/>
 
-<img src="./assets/projects.svg" alt="Active projects: Haus of DADA (production multilingual AI chatbot) and Magnetar Global (AI-coordinated site redesign)" width="100%" />
+## Currently Engineering
+
+<img src="./assets/engineering-focus.svg" alt="Active engineering focus: AI Agents, Multi-Model Systems, LLM Engineering, Agentic Workflows, AI Automation, Enterprise Chatbots, AI SaaS Platforms, Backend Infrastructure" width="100%" />
+
+<br/><br/>
+
+## Selected Systems
+
+<img src="./assets/selected-systems.svg" alt="Selected systems: AI Customer Support Platform, AI Lead Intelligence Platform, Enterprise AI Dashboard, Workflow Automation Engine" width="100%" />
+
+<br/><br/>
+
+<div align="center">
+  <img src="./assets/divider.svg" alt="" width="100%" />
+</div>
 
 <br/>
 
@@ -51,37 +62,25 @@ I'd rather maintain one system that works than demo ten that don't.
 | **Measure before optimizing** | No tuning without a number to tune against. |
 | **Production > prototype** | A demo proves an idea works. A production system proves it keeps working. |
 
-<br/>
+<br/><br/>
 
 <div align="center">
   <img src="./assets/divider.svg" alt="" width="100%" />
 </div>
 
-## System Architecture
-
-A simplified view of the routing and fallback architecture behind the
-Haus of DADA chatbot — the production pattern I default to for
-LLM-backed systems that need to stay online under rate limits.
-
-<div align="center">
-  <img src="./assets/architecture.svg" alt="AI system architecture: gateway, LLM router with fallback chain, session store, lead capture, output" width="100%" />
-</div>
-
 <br/>
-
-<div align="center">
-  <img src="./assets/divider.svg" alt="" width="100%" />
-</div>
 
 ## Technology Ecosystem
 
 <img src="./assets/tech-grid.svg" alt="Technology stack: AI/LLM (Groq, OpenAI, Gemini, Claude, Prompt Engineering, LLM Routing, Fallback Chains, Multi-Model Orchestration), Backend (Node.js, Python, REST APIs, Serverless, Express.js), Frontend (JavaScript, React, Next.js, Vanilla JS Widgets, HTML, CSS, SVG), Infrastructure (Vercel, Git, GitHub Actions, Custom Domains, Linux), Data (Supabase, PostgreSQL, Session Storage), Tooling (VS Code, Postman, Cursor, Windsurf)" width="100%" />
 
-<br/>
+<br/><br/>
 
 <div align="center">
   <img src="./assets/divider.svg" alt="" width="100%" />
 </div>
+
+<br/>
 
 ## GitHub Analytics
 
@@ -96,7 +95,7 @@ LLM-backed systems that need to stay online under rate limits.
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhishekLim17&layout=compact&hide_border=true&bg_color=050505&title_color=FF7A00&text_color=8A8A8A" alt="Top languages" />
 </div>
 
-<br/>
+<br/><br/>
 
 <div align="center">
   <img src="./assets/divider.svg" alt="" width="100%" />

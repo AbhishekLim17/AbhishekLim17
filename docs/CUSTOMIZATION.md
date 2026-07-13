@@ -27,12 +27,11 @@ parameters on the GitHub Analytics image URLs in `README.md`.
 |---|---|---|
 | `hero.svg` | Top banner with name, title, neural network | Animated data-flow pulses, pulsing nodes |
 | `status-bar.svg` | Terminal-style status panel | Fade-in text rows, blinking cursor, scanline sweep |
-| `projects.svg` | Featured project cards (2-up layout) | Status indicators, tech tags, research bar |
-| `architecture.svg` | System architecture diagram | Router → provider fallback chain, data-flow pulse |
+| `engineering-focus.svg` | Engineering focus dashboard (2×4 grid) | Left accent bars, staggered pulse, data-flow particle |
+| `selected-systems.svg` | Production system cards (2×2 grid) | Header bars, descriptions, tech indicators |
 | `tech-grid.svg` | Technology ecosystem (6 categories) | Category cards with tech badges, connecting particles |
 | `connect-bar.svg` | Contact links bar | GitHub, Email, LinkedIn with pulse indicators |
 | `divider.svg` | Section separator | Three-dot animated pattern |
-| `grid.svg` | Decorative panel frame | Corner brackets, status dot |
 | `footer.svg` | Bottom banner | Runtime status, attribution |
 
 ## Editing the SVGs
@@ -60,27 +59,26 @@ sections as shipped:
 1. Hero (`hero.svg`)
 2. AI System Status (`status-bar.svg` — animated terminal panel)
 3. About (plain text)
-4. Currently Building (`projects.svg` — two project cards + research bar)
-5. Engineering Principles (markdown table)
-6. System Architecture (`architecture.svg`)
+4. Currently Engineering (`engineering-focus.svg` — 2×4 focus area grid)
+5. Selected Systems (`selected-systems.svg` — 2×2 production system cards)
+6. Engineering Principles (markdown table)
 7. Technology Ecosystem (`tech-grid.svg` — six category cards)
 8. GitHub Analytics (external stat card services)
 9. Connect (`connect-bar.svg` + text fallback links)
 10. Footer (`footer.svg`)
 11. Profile view counter (external badge service)
 
-## Updating "Currently Building"
+## Updating "Currently Engineering"
 
-This section should reflect real, active work — not a permanent list. When
-a project ships or wraps up, either move it into a future **Selected Work**
-section (not included by default, but easy to add as a table: project,
-one-line description, link) or remove it. Keeping finished work listed as
-"currently building" undercuts the credibility the rest of the design is
-built around.
+The engineering focus areas in `assets/engineering-focus.svg` should reflect
+your current active domains. Update the card labels when your focus shifts.
 
-To update the project cards, edit `assets/projects.svg` directly — update
-the project names, descriptions, tech tags, and status labels. The research
-direction bar at the bottom can also be edited independently.
+## Updating "Selected Systems"
+
+The system cards in `assets/selected-systems.svg` represent the types of
+production systems you build. Update titles, descriptions, and tech
+indicators when your portfolio evolves. Do not list specific client names
+— keep it focused on system types.
 
 ## Updating contact details
 
@@ -93,13 +91,6 @@ Contact information appears in two places:
 
 Update both when changing contact details.
 
-## Regenerating the architecture diagram
-
-`architecture.svg` deliberately mirrors a real system (LLM router with a
-provider fallback chain, session storage, lead capture) rather than a
-generic multi-model diagram. If your actual system changes shape, redraw
-the boxes and connections to match it — an architecture diagram that
-doesn't match what you actually built is worse than no diagram at all.
 
 ## GitHub Analytics URLs
 
