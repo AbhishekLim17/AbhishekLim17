@@ -1,0 +1,164 @@
+<svg viewBox="0 0 1000 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Featured Projects: Haus of DADA and Magnetar Global">
+  <defs>
+    <pattern id="projGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#141414" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="projGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF7A00" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FF7A00" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="card1Clip"><rect x="30" y="62" width="460" height="340" rx="6"/></clipPath>
+    <clipPath id="card2Clip"><rect x="510" y="62" width="460" height="340" rx="6"/></clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="1000" height="460" fill="#050505"/>
+  <rect width="1000" height="460" fill="url(#projGrid)"/>
+
+  <!-- section header -->
+  <text x="30" y="36" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" fill="#8A8A8A" letter-spacing="3">ACTIVE.PROJECTS</text>
+  <line x1="220" y1="30" x2="970" y2="30" stroke="#2A2A2A" stroke-width="1"/>
+
+  <!-- ===== CARD 1: Haus of DADA ===== -->
+  <g>
+    <!-- card background -->
+    <rect x="30" y="62" width="460" height="340" rx="6" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+    <!-- subtle glow -->
+    <ellipse cx="260" cy="200" rx="180" ry="120" fill="url(#projGlow)" clip-path="url(#card1Clip)"/>
+
+    <!-- top status bar -->
+    <rect x="30" y="62" width="460" height="34" rx="6" fill="#101010"/>
+    <rect x="30" y="90" width="460" height="6" fill="#0A0A0A"/>
+    <circle cx="52" cy="79" r="4" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="66" y="83" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A" letter-spacing="2">PRODUCTION</text>
+    <text x="470" y="83" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A">hausofdada.de</text>
+
+    <!-- project name -->
+    <text x="50" y="128" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="22" font-weight="700" fill="#FFFFFF" letter-spacing="1">Haus of DADA</text>
+
+    <!-- description -->
+    <text font-family="'JetBrains Mono', monospace" font-size="12" fill="#8A8A8A">
+      <tspan x="50" y="158">Multilingual AI chatbot widget in production</tspan>
+      <tspan x="50" y="176">for a German digital agency. Handles LLM</tspan>
+      <tspan x="50" y="194">routing across providers, conversation &amp;</tspan>
+      <tspan x="50" y="212">session storage, and structured lead capture.</tspan>
+      <tspan x="50" y="230">Built in vanilla JS for a lightweight</tspan>
+      <tspan x="50" y="248">embeddable footprint.</tspan>
+    </text>
+
+    <!-- tech tags -->
+    <g transform="translate(50,272)">
+      <rect width="70" height="22" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="35" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FF7A00">Node.js</text>
+    </g>
+    <g transform="translate(130,272)">
+      <rect width="48" height="22" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="24" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FF7A00">Groq</text>
+    </g>
+    <g transform="translate(188,272)">
+      <rect width="78" height="22" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="39" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FF7A00">Supabase</text>
+    </g>
+    <g transform="translate(276,272)">
+      <rect width="70" height="22" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="35" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FF7A00">Vercel</text>
+    </g>
+    <g transform="translate(50,300)">
+      <rect width="88" height="22" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="44" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FF7A00">Vanilla JS</text>
+    </g>
+    <g transform="translate(148,300)">
+      <rect width="102" height="22" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="51" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FF7A00">LLM Routing</text>
+    </g>
+
+    <!-- data flow animation along left edge -->
+    <circle r="2" fill="#FF7A00">
+      <animateMotion dur="3s" repeatCount="indefinite" path="M30,62 L30,402"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- corner accent -->
+    <g stroke="#FF7A00" stroke-width="1.5" fill="none">
+      <path d="M 30 78 L 30 62 L 46 62"/>
+      <path d="M 474 62 L 490 62 L 490 78"/>
+      <path d="M 490 386 L 490 402 L 474 402"/>
+      <path d="M 46 402 L 30 402 L 30 386"/>
+    </g>
+  </g>
+
+  <!-- ===== CARD 2: Magnetar Global ===== -->
+  <g>
+    <!-- card background -->
+    <rect x="510" y="62" width="460" height="340" rx="6" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+    <ellipse cx="740" cy="200" rx="180" ry="120" fill="url(#projGlow)" clip-path="url(#card2Clip)"/>
+
+    <!-- top status bar -->
+    <rect x="510" y="62" width="460" height="34" rx="6" fill="#101010"/>
+    <rect x="510" y="90" width="460" height="6" fill="#0A0A0A"/>
+    <circle cx="532" cy="79" r="4" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.1s" repeatCount="indefinite" begin="0.4s"/>
+    </circle>
+    <text x="546" y="83" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A" letter-spacing="2">IN PROGRESS</text>
+    <text x="950" y="83" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A">site redesign</text>
+
+    <!-- project name -->
+    <text x="530" y="128" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="22" font-weight="700" fill="#FFFFFF" letter-spacing="1">Magnetar Global</text>
+
+    <!-- description -->
+    <text font-family="'JetBrains Mono', monospace" font-size="12" fill="#8A8A8A">
+      <tspan x="530" y="158">Full site redesign coordinated through a</tspan>
+      <tspan x="530" y="176">two-model AI workflow: architectural and QA</tspan>
+      <tspan x="530" y="194">decisions handled deliberately, bulk HTML and</tspan>
+      <tspan x="530" y="212">content generation handled separately. Both</tspan>
+      <tspan x="530" y="230">kept in sync through a persistent instruction</tspan>
+      <tspan x="530" y="248">system that survives tooling changes.</tspan>
+    </text>
+
+    <!-- tech tags -->
+    <g transform="translate(530,272)">
+      <rect width="70" height="22" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="35" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FF7A00">Next.js</text>
+    </g>
+    <g transform="translate(610,272)">
+      <rect width="60" height="22" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="30" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FF7A00">React</text>
+    </g>
+    <g transform="translate(680,272)">
+      <rect width="96" height="22" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="48" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FF7A00">Multi-Model</text>
+    </g>
+    <g transform="translate(530,300)">
+      <rect width="88" height="22" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="44" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FF7A00">AI Workflow</text>
+    </g>
+    <g transform="translate(628,300)">
+      <rect width="70" height="22" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="35" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FF7A00">Vercel</text>
+    </g>
+
+    <!-- data flow animation along left edge -->
+    <circle r="2" fill="#FF7A00">
+      <animateMotion dur="3.4s" repeatCount="indefinite" begin="0.8s" path="M510,62 L510,402"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.4s" repeatCount="indefinite" begin="0.8s"/>
+    </circle>
+
+    <!-- corner accent -->
+    <g stroke="#FF7A00" stroke-width="1.5" fill="none">
+      <path d="M 510 78 L 510 62 L 526 62"/>
+      <path d="M 954 62 L 970 62 L 970 78"/>
+      <path d="M 970 386 L 970 402 L 954 402"/>
+      <path d="M 526 402 L 510 402 L 510 386"/>
+    </g>
+  </g>
+
+  <!-- ===== RESEARCH DIRECTION BAR ===== -->
+  <rect x="30" y="416" width="940" height="36" rx="4" fill="#101010" stroke="#2A2A2A" stroke-width="1"/>
+  <circle cx="52" cy="434" r="3" fill="#FF7A00">
+    <animate attributeName="opacity" values="1;0.2;1" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="66" y="438" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A" letter-spacing="1">RESEARCH</text>
+  <text x="160" y="438" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Cost-aware LLM routing · Hallucination fingerprinting · Bias auditing for AI screening</text>
+</svg>

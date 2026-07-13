@@ -1,0 +1,250 @@
+<svg viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Technology Ecosystem">
+  <defs>
+    <pattern id="techGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#141414" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="catGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF7A00" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FF7A00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1000" height="540" fill="#050505"/>
+  <rect width="1000" height="540" fill="url(#techGrid)"/>
+
+  <!-- section header -->
+  <text x="30" y="36" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" fill="#8A8A8A" letter-spacing="3">TECHNOLOGY.ECOSYSTEM</text>
+  <line x1="280" y1="30" x2="970" y2="30" stroke="#2A2A2A" stroke-width="1"/>
+
+  <!-- ===== ROW 1: AI/LLM + Backend ===== -->
+
+  <!-- AI / LLM Category -->
+  <g>
+    <rect x="30" y="56" width="480" height="200" rx="5" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+    <ellipse cx="270" cy="156" rx="200" ry="80" fill="url(#catGlow)"/>
+
+    <!-- category header -->
+    <rect x="30" y="56" width="480" height="30" rx="5" fill="#101010"/>
+    <rect x="30" y="82" width="480" height="4" fill="#0A0A0A"/>
+    <circle cx="50" cy="71" r="3" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="62" y="75" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FF7A00" letter-spacing="2">AI / LLM</text>
+
+    <!-- tech items -->
+    <g transform="translate(50,100)">
+      <rect width="76" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="38" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Groq</text>
+    </g>
+    <g transform="translate(136,100)">
+      <rect width="104" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="52" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">OpenAI API</text>
+    </g>
+    <g transform="translate(250,100)">
+      <rect width="108" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="54" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Gemini API</text>
+    </g>
+    <g transform="translate(368,100)">
+      <rect width="126" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="63" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Claude API</text>
+    </g>
+
+    <g transform="translate(50,136)">
+      <rect width="156" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="78" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Prompt Engineering</text>
+    </g>
+    <g transform="translate(216,136)">
+      <rect width="138" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="69" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">LLM Routing</text>
+    </g>
+
+    <g transform="translate(50,172)">
+      <rect width="186" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="93" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Fallback Chains</text>
+    </g>
+    <g transform="translate(246,172)">
+      <rect width="210" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="105" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Multi-Model Orchestration</text>
+    </g>
+  </g>
+
+  <!-- Backend Category -->
+  <g>
+    <rect x="530" y="56" width="440" height="200" rx="5" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+    <ellipse cx="750" cy="156" rx="180" ry="80" fill="url(#catGlow)"/>
+
+    <rect x="530" y="56" width="440" height="30" rx="5" fill="#101010"/>
+    <rect x="530" y="82" width="440" height="4" fill="#0A0A0A"/>
+    <circle cx="550" cy="71" r="3" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.1s" repeatCount="indefinite" begin="0.3s"/>
+    </circle>
+    <text x="562" y="75" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FF7A00" letter-spacing="2">BACKEND</text>
+
+    <g transform="translate(550,100)">
+      <rect width="88" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="44" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Node.js</text>
+    </g>
+    <g transform="translate(648,100)">
+      <rect width="84" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="42" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Python</text>
+    </g>
+    <g transform="translate(742,100)">
+      <rect width="100" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="50" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">REST APIs</text>
+    </g>
+
+    <g transform="translate(550,136)">
+      <rect width="164" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="82" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Serverless Functions</text>
+    </g>
+    <g transform="translate(724,136)">
+      <rect width="118" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="59" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Express.js</text>
+    </g>
+  </g>
+
+  <!-- ===== ROW 2: Frontend + Infrastructure ===== -->
+
+  <!-- Frontend Category -->
+  <g>
+    <rect x="30" y="276" width="480" height="124" rx="5" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+
+    <rect x="30" y="276" width="480" height="30" rx="5" fill="#101010"/>
+    <rect x="30" y="302" width="480" height="4" fill="#0A0A0A"/>
+    <circle cx="50" cy="291" r="3" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite" begin="0.6s"/>
+    </circle>
+    <text x="62" y="295" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FF7A00" letter-spacing="2">FRONTEND</text>
+
+    <g transform="translate(50,320)">
+      <rect width="104" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="52" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">JavaScript</text>
+    </g>
+    <g transform="translate(164,320)">
+      <rect width="72" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="36" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">React</text>
+    </g>
+    <g transform="translate(246,320)">
+      <rect width="84" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="42" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Next.js</text>
+    </g>
+    <g transform="translate(340,320)">
+      <rect width="150" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="75" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Vanilla JS Widgets</text>
+    </g>
+
+    <g transform="translate(50,356)">
+      <rect width="68" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="34" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">HTML</text>
+    </g>
+    <g transform="translate(128,356)">
+      <rect width="62" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="31" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">CSS</text>
+    </g>
+    <g transform="translate(200,356)">
+      <rect width="62" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="31" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">SVG</text>
+    </g>
+  </g>
+
+  <!-- Infrastructure & Deployment -->
+  <g>
+    <rect x="530" y="276" width="440" height="124" rx="5" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+
+    <rect x="530" y="276" width="440" height="30" rx="5" fill="#101010"/>
+    <rect x="530" y="302" width="440" height="4" fill="#0A0A0A"/>
+    <circle cx="550" cy="291" r="3" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.3s" repeatCount="indefinite" begin="0.9s"/>
+    </circle>
+    <text x="562" y="295" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FF7A00" letter-spacing="2">INFRASTRUCTURE</text>
+
+    <g transform="translate(550,320)">
+      <rect width="74" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="37" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Vercel</text>
+    </g>
+    <g transform="translate(634,320)">
+      <rect width="56" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="28" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Git</text>
+    </g>
+    <g transform="translate(700,320)">
+      <rect width="134" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="67" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">GitHub Actions</text>
+    </g>
+
+    <g transform="translate(550,356)">
+      <rect width="138" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="69" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Custom Domains</text>
+    </g>
+    <g transform="translate(698,356)">
+      <rect width="76" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="38" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Linux</text>
+    </g>
+  </g>
+
+  <!-- ===== ROW 3: Data & Storage + Tooling ===== -->
+
+  <!-- Data & Storage -->
+  <g>
+    <rect x="30" y="420" width="480" height="104" rx="5" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+
+    <rect x="30" y="420" width="480" height="30" rx="5" fill="#101010"/>
+    <rect x="30" y="446" width="480" height="4" fill="#0A0A0A"/>
+    <circle cx="50" cy="435" r="3" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.9s" repeatCount="indefinite" begin="1.2s"/>
+    </circle>
+    <text x="62" y="439" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FF7A00" letter-spacing="2">DATA &amp; STORAGE</text>
+
+    <g transform="translate(50,464)">
+      <rect width="96" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="48" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Supabase</text>
+    </g>
+    <g transform="translate(156,464)">
+      <rect width="112" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="56" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">PostgreSQL</text>
+    </g>
+    <g transform="translate(278,464)">
+      <rect width="188" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="94" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Session / Conv. Storage</text>
+    </g>
+  </g>
+
+  <!-- Tooling -->
+  <g>
+    <rect x="530" y="420" width="440" height="104" rx="5" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+
+    <rect x="530" y="420" width="440" height="30" rx="5" fill="#101010"/>
+    <rect x="530" y="446" width="440" height="4" fill="#0A0A0A"/>
+    <circle cx="550" cy="435" r="3" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.6s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+    <text x="562" y="439" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FF7A00" letter-spacing="2">TOOLING</text>
+
+    <g transform="translate(550,464)">
+      <rect width="86" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="43" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">VS Code</text>
+    </g>
+    <g transform="translate(646,464)">
+      <rect width="90" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="45" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Postman</text>
+    </g>
+    <g transform="translate(746,464)">
+      <rect width="78" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="39" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Cursor</text>
+    </g>
+    <g transform="translate(834,464)">
+      <rect width="106" height="26" rx="4" fill="#101010" stroke="#2A2A2A"/>
+      <text x="53" y="17" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Windsurf</text>
+    </g>
+  </g>
+
+  <!-- connecting data flow particles -->
+  <circle r="2" fill="#FF7A00">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M30,156 L510,156 L510,336 L30,336 L30,476 L510,476"/>
+    <animate attributeName="opacity" values="0;0.8;0.8;0" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2" fill="#FF7A00">
+    <animateMotion dur="4.5s" repeatCount="indefinite" begin="1.5s" path="M530,156 L970,156 L970,336 L530,336 L530,476 L970,476"/>
+    <animate attributeName="opacity" values="0;0.8;0.8;0" dur="4.5s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+</svg>

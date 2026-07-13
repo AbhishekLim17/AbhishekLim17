@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1000 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Connect: GitHub, Email, LinkedIn">
+  <defs>
+    <pattern id="connectGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#141414" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- background -->
+  <rect width="1000" height="80" fill="#050505"/>
+  <rect width="1000" height="80" fill="url(#connectGrid)"/>
+
+  <!-- outer frame -->
+  <rect x="30" y="10" width="940" height="60" rx="5" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+
+  <!-- left label -->
+  <text x="60" y="45" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="11" fill="#8A8A8A" letter-spacing="3">CONNECT</text>
+  <line x1="140" y1="40" x2="160" y2="40" stroke="#2A2A2A" stroke-width="1"/>
+
+  <!-- GitHub link block -->
+  <g transform="translate(200,24)">
+    <rect width="220" height="32" rx="4" fill="#101010" stroke="#2A2A2A"/>
+    <circle cx="18" cy="16" r="4" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="32" y="20" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">github.com/AbhishekLim17</text>
+  </g>
+
+  <!-- separator -->
+  <circle cx="445" cy="40" r="2" fill="#2A2A2A"/>
+
+  <!-- Email link block -->
+  <g transform="translate(470,24)">
+    <rect width="200" height="32" rx="4" fill="#101010" stroke="#2A2A2A"/>
+    <circle cx="18" cy="16" r="4" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" begin="0.4s"/>
+    </circle>
+    <text x="32" y="20" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FFFFFF">abhishek.limbachiya.edu</text>
+  </g>
+
+  <!-- separator -->
+  <circle cx="695" cy="40" r="2" fill="#2A2A2A"/>
+
+  <!-- LinkedIn link block -->
+  <g transform="translate(720,24)">
+    <rect width="230" height="32" rx="4" fill="#101010" stroke="#2A2A2A"/>
+    <circle cx="18" cy="16" r="4" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" begin="0.8s"/>
+    </circle>
+    <text x="32" y="20" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FFFFFF">abhishek-limbachiya-18mar02</text>
+  </g>
+
+  <!-- corner accents -->
+  <g stroke="#FF7A00" stroke-width="1.5" fill="none">
+    <path d="M 30 24 L 30 10 L 44 10"/>
+    <path d="M 956 10 L 970 10 L 970 24"/>
+    <path d="M 970 56 L 970 70 L 956 70"/>
+    <path d="M 44 70 L 30 70 L 30 56"/>
+  </g>
+</svg>

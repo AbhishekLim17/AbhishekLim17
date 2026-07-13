@@ -1,0 +1,110 @@
+<svg viewBox="0 0 1000 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI System Status Panel">
+  <defs>
+    <pattern id="statusGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#141414" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF7A00" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF7A00" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FF7A00" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1000" height="220" fill="#050505"/>
+  <rect width="1000" height="220" fill="url(#statusGrid)"/>
+
+  <!-- outer frame -->
+  <rect x="30" y="16" width="940" height="188" rx="4" fill="#0A0A0A" stroke="#2A2A2A" stroke-width="1"/>
+
+  <!-- title bar -->
+  <rect x="30" y="16" width="940" height="30" rx="4" fill="#101010"/>
+  <rect x="30" y="42" width="940" height="4" fill="#0A0A0A"/>
+  <!-- window dots -->
+  <circle cx="52" cy="31" r="4" fill="#FF7A00">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="68" cy="31" r="4" fill="#8A8A8A">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  <circle cx="84" cy="31" r="4" fill="#8A8A8A">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" begin="0.6s"/>
+  </circle>
+  <text x="500" y="36" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="11" fill="#8A8A8A" letter-spacing="3">AI SYSTEM STATUS</text>
+
+  <!-- scanline sweep -->
+  <rect x="30" y="46" width="940" height="158" fill="url(#scanGrad)">
+    <animate attributeName="y" values="46;188;46" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- content rows -->
+  <!-- IDENTITY -->
+  <text x="70" y="82" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="12" fill="#8A8A8A" letter-spacing="1">IDENTITY</text>
+  <text x="220" y="82" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" fill="#FFFFFF">
+    Founder · AI Engineer
+    <animate attributeName="opacity" values="0;0;1" dur="1.5s" fill="freeze"/>
+  </text>
+
+  <!-- STATUS -->
+  <text x="70" y="110" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="12" fill="#8A8A8A" letter-spacing="1">STATUS</text>
+  <circle cx="222" cy="106" r="3.5" fill="#FF7A00">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <text x="234" y="110" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" fill="#FF7A00">
+    Building production AI systems
+    <animate attributeName="opacity" values="0;0;1" dur="2s" fill="freeze"/>
+  </text>
+
+  <!-- FOCUS -->
+  <text x="70" y="138" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="12" fill="#8A8A8A" letter-spacing="1">FOCUS</text>
+  <text x="220" y="138" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" fill="#FFFFFF">
+    LLM routing · AI agents · automation · backend infra
+    <animate attributeName="opacity" values="0;0;0;1" dur="2.5s" fill="freeze"/>
+  </text>
+
+  <!-- AVAILABILITY -->
+  <text x="70" y="166" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="12" fill="#8A8A8A" letter-spacing="1">AVAILABILITY</text>
+  <text x="220" y="166" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" fill="#FFFFFF">
+    Open to freelance &amp; collaboration
+    <animate attributeName="opacity" values="0;0;0;0;1" dur="3s" fill="freeze"/>
+  </text>
+
+  <!-- blinking cursor at end of last line -->
+  <rect x="530" y="155" width="8" height="15" fill="#FF7A00">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" begin="3s"/>
+  </rect>
+
+  <!-- right side decorative elements -->
+  <g transform="translate(880,70)">
+    <circle r="2" fill="#FF7A00">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="10" y1="0" x2="60" y2="0" stroke="#2A2A2A" stroke-width="1"/>
+  </g>
+  <g transform="translate(880,100)">
+    <circle r="2" fill="#8A8A8A">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <line x1="10" y1="0" x2="45" y2="0" stroke="#2A2A2A" stroke-width="1"/>
+  </g>
+  <g transform="translate(880,130)">
+    <circle r="2" fill="#FF7A00">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.9s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <line x1="10" y1="0" x2="55" y2="0" stroke="#2A2A2A" stroke-width="1"/>
+  </g>
+  <g transform="translate(880,160)">
+    <circle r="2" fill="#8A8A8A">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" begin="0.3s"/>
+    </circle>
+    <line x1="10" y1="0" x2="50" y2="0" stroke="#2A2A2A" stroke-width="1"/>
+  </g>
+
+  <!-- corner accents -->
+  <g stroke="#FF7A00" stroke-width="1.5" fill="none">
+    <path d="M 30 30 L 30 16 L 44 16"/>
+    <path d="M 956 16 L 970 16 L 970 30"/>
+    <path d="M 970 190 L 970 204 L 956 204"/>
+    <path d="M 44 204 L 30 204 L 30 190"/>
+  </g>
+</svg>
