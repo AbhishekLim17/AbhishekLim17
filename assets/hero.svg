@@ -1,0 +1,103 @@
+<svg viewBox="0 0 1000 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abhishek Limbachiya — AI Engineer">
+  <defs>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF7A00" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FF7A00" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- explicit background so this renders correctly regardless of GitHub theme -->
+  <rect width="1000" height="280" fill="#050505"/>
+  <rect width="1000" height="280" fill="url(#gridPattern)"/>
+
+  <!-- neural network connections -->
+  <g stroke="#2A2A2A" stroke-width="1" fill="none">
+    <line x1="60" y1="60" x2="180" y2="110"/>
+    <line x1="60" y1="180" x2="180" y2="110"/>
+    <line x1="180" y1="110" x2="300" y2="70"/>
+    <line x1="180" y1="110" x2="300" y2="170"/>
+    <line x1="300" y1="70" x2="420" y2="120"/>
+    <line x1="300" y1="170" x2="420" y2="120"/>
+    <line x1="60" y1="60" x2="60" y2="180"/>
+    <line x1="820" y1="70" x2="900" y2="120"/>
+    <line x1="820" y1="190" x2="900" y2="120"/>
+    <line x1="900" y1="120" x2="950" y2="70"/>
+    <line x1="900" y1="120" x2="950" y2="170"/>
+    <line x1="740" y1="130" x2="820" y2="70"/>
+    <line x1="740" y1="130" x2="820" y2="190"/>
+  </g>
+
+  <!-- animated data-flow pulses along connections -->
+  <circle r="2.5" fill="#FF7A00">
+    <animateMotion dur="3.2s" repeatCount="indefinite" path="M60,60 L180,110 L300,70 L420,120"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2.5" fill="#FF7A00">
+    <animateMotion dur="4s" repeatCount="indefinite" begin="0.6s" path="M60,180 L180,110 L300,170 L420,120"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" begin="0.6s"/>
+  </circle>
+  <circle r="2.5" fill="#FF7A00">
+    <animateMotion dur="3.6s" repeatCount="indefinite" begin="1.1s" path="M900,120 L820,70 L740,130"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3.6s" repeatCount="indefinite" begin="1.1s"/>
+  </circle>
+  <circle r="2.5" fill="#FF7A00">
+    <animateMotion dur="3.9s" repeatCount="indefinite" begin="1.8s" path="M900,120 L950,170"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3.9s" repeatCount="indefinite" begin="1.8s"/>
+  </circle>
+
+  <!-- nodes, left cluster -->
+  <g>
+    <circle cx="60" cy="60" r="3.5" fill="#8A8A8A"/>
+    <circle cx="60" cy="180" r="3.5" fill="#8A8A8A"/>
+    <circle cx="180" cy="110" r="4.5" fill="#FF7A00"/>
+    <circle cx="180" cy="110" r="10" fill="url(#nodeGlow)">
+      <animate attributeName="r" values="8;14;8" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.15;0.6" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="70" r="3.5" fill="#8A8A8A"/>
+    <circle cx="300" cy="170" r="3.5" fill="#8A8A8A"/>
+    <circle cx="420" cy="120" r="4" fill="#FF7A00">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- nodes, right cluster -->
+  <g>
+    <circle cx="950" cy="70" r="3.5" fill="#8A8A8A"/>
+    <circle cx="950" cy="170" r="3.5" fill="#8A8A8A"/>
+    <circle cx="900" cy="120" r="4.5" fill="#FF7A00"/>
+    <circle cx="900" cy="120" r="10" fill="url(#nodeGlow)">
+      <animate attributeName="r" values="8;14;8" dur="3.1s" repeatCount="indefinite" begin="0.4s"/>
+      <animate attributeName="opacity" values="0.6;0.15;0.6" dur="3.1s" repeatCount="indefinite" begin="0.4s"/>
+    </circle>
+    <circle cx="820" cy="70" r="3.5" fill="#8A8A8A"/>
+    <circle cx="820" cy="190" r="3.5" fill="#8A8A8A"/>
+    <circle cx="740" cy="130" r="4" fill="#FF7A00">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.6s" repeatCount="indefinite" begin="0.3s"/>
+    </circle>
+  </g>
+
+  <!-- center panel -->
+  <rect x="150" y="0" width="700" height="280" fill="#050505" fill-opacity="0.55"/>
+
+  <!-- wordmark -->
+  <text x="500" y="118" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="42" font-weight="700" fill="#FFFFFF" letter-spacing="2">ABHISHEK LIMBACHIYA</text>
+
+  <text x="500" y="152" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="15" fill="#FF7A00" letter-spacing="5">FOUNDER · AI ENGINEER</text>
+
+  <line x1="400" y1="174" x2="600" y2="174" stroke="#2A2A2A" stroke-width="1"/>
+
+  <text x="500" y="204" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="14" fill="#8A8A8A">building production AI systems — routing, agents, automation</text>
+
+  <!-- status chip -->
+  <g transform="translate(432,224)">
+    <rect width="136" height="26" rx="13" fill="#101010" stroke="#2A2A2A"/>
+    <circle cx="16" cy="13" r="4" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="30" y="17" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="11" fill="#8A8A8A" letter-spacing="1">SYSTEM ONLINE</text>
+  </g>
+</svg>

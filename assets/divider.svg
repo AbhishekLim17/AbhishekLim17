@@ -1,0 +1,18 @@
+<svg viewBox="0 0 1000 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="section divider">
+  <rect width="1000" height="32" fill="#050505"/>
+  <line x1="0" y1="16" x2="440" y2="16" stroke="#2A2A2A" stroke-width="1"/>
+  <line x1="560" y1="16" x2="1000" y2="16" stroke="#2A2A2A" stroke-width="1"/>
+
+  <g transform="translate(500,16)">
+    <rect x="-40" y="-9" width="80" height="18" rx="2" fill="#101010" stroke="#2A2A2A"/>
+    <circle cx="-24" cy="0" r="2" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="2" fill="#8A8A8A">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" begin="0.4s"/>
+    </circle>
+    <circle cx="24" cy="0" r="2" fill="#8A8A8A">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" begin="0.8s"/>
+    </circle>
+  </g>
+</svg>

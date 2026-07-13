@@ -1,0 +1,23 @@
+<svg viewBox="0 0 1000 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="panel frame">
+  <defs>
+    <pattern id="finePattern" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#141414" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="120" fill="#050505"/>
+  <rect x="1" y="1" width="998" height="118" fill="url(#finePattern)"/>
+  <rect x="1" y="1" width="998" height="118" fill="none" stroke="#2A2A2A" stroke-width="1"/>
+
+  <!-- corner brackets -->
+  <g stroke="#FF7A00" stroke-width="2" fill="none">
+    <path d="M 0 20 L 0 0 L 20 0"/>
+    <path d="M 980 0 L 1000 0 L 1000 20"/>
+    <path d="M 1000 100 L 1000 120 L 980 120"/>
+    <path d="M 20 120 L 0 120 L 0 100"/>
+  </g>
+
+  <text x="20" y="24" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#8A8A8A" letter-spacing="2">SYS.PANEL</text>
+  <circle cx="980" cy="20" r="3" fill="#FF7A00">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+</svg>

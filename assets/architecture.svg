@@ -1,0 +1,103 @@
+<svg viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI system architecture diagram">
+  <defs>
+    <pattern id="archGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#141414" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3A3A3A"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="620" fill="#050505"/>
+  <rect width="1000" height="620" fill="url(#archGrid)"/>
+
+  <text x="30" y="36" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" fill="#8A8A8A" letter-spacing="3">SYSTEM.ARCHITECTURE — MULTILINGUAL ASSISTANT RUNTIME</text>
+  <line x1="30" y1="48" x2="970" y2="48" stroke="#2A2A2A" stroke-width="1"/>
+
+  <!-- helper: box style used throughout -->
+  <!-- Client -->
+  <g>
+    <rect x="400" y="70" width="200" height="46" rx="4" fill="#101010" stroke="#2A2A2A"/>
+    <text x="500" y="98" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" fill="#FFFFFF">Chat Widget (Client)</text>
+  </g>
+  <line x1="500" y1="116" x2="500" y2="146" stroke="#3A3A3A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Gateway -->
+  <g>
+    <rect x="370" y="146" width="260" height="46" rx="4" fill="#101010" stroke="#FF7A00"/>
+    <text x="500" y="174" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" fill="#FF7A00">Serverless API Gateway</text>
+  </g>
+  <line x1="500" y1="192" x2="500" y2="222" stroke="#3A3A3A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Router -->
+  <g>
+    <rect x="350" y="222" width="300" height="50" rx="4" fill="#101010" stroke="#2A2A2A"/>
+    <text x="500" y="243" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" fill="#FFFFFF">LLM Router</text>
+    <text x="500" y="260" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A">rate-limit aware · fallback chain</text>
+  </g>
+
+  <!-- fan out to model providers -->
+  <line x1="500" y1="272" x2="500" y2="300" stroke="#3A3A3A" stroke-width="1.5"/>
+  <line x1="180" y1="300" x2="820" y2="300" stroke="#3A3A3A" stroke-width="1.5"/>
+  <line x1="180" y1="300" x2="180" y2="330" stroke="#3A3A3A" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="500" y1="300" x2="500" y2="330" stroke="#3A3A3A" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="820" y1="300" x2="820" y2="330" stroke="#3A3A3A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="90" y="330" width="180" height="52" rx="4" fill="#101010" stroke="#FF7A00"/>
+    <text x="180" y="352" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" fill="#FF7A00">Groq</text>
+    <text x="180" y="368" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A">primary — low latency</text>
+    <circle cx="255" cy="340" r="3.5" fill="#FF7A00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g>
+    <rect x="410" y="330" width="180" height="52" rx="4" fill="#101010" stroke="#2A2A2A"/>
+    <text x="500" y="352" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" fill="#FFFFFF">Fallback Provider</text>
+    <text x="500" y="368" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A">secondary on 429 / timeout</text>
+  </g>
+
+  <g>
+    <rect x="730" y="330" width="180" height="52" rx="4" fill="#101010" stroke="#2A2A2A"/>
+    <text x="820" y="352" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" fill="#FFFFFF">Fallback Provider</text>
+    <text x="820" y="368" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A">tertiary, last resort</text>
+  </g>
+
+  <!-- converge back down -->
+  <line x1="180" y1="382" x2="180" y2="410" stroke="#3A3A3A" stroke-width="1.5"/>
+  <line x1="500" y1="382" x2="500" y2="410" stroke="#3A3A3A" stroke-width="1.5"/>
+  <line x1="820" y1="382" x2="820" y2="410" stroke="#3A3A3A" stroke-width="1.5"/>
+  <line x1="180" y1="410" x2="820" y2="410" stroke="#3A3A3A" stroke-width="1.5"/>
+  <line x1="500" y1="410" x2="500" y2="440" stroke="#3A3A3A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- data flow pulse traveling down the router path -->
+  <circle r="3" fill="#FF7A00">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M500,116 L500,192 L500,272 L500,300 L180,300 L180,382"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Session / Lead layer -->
+  <g>
+    <rect x="270" y="440" width="180" height="50" rx="4" fill="#101010" stroke="#2A2A2A"/>
+    <text x="360" y="461" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#FFFFFF">Session Store</text>
+    <text x="360" y="477" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A">conversation history</text>
+  </g>
+  <g>
+    <rect x="550" y="440" width="180" height="50" rx="4" fill="#101010" stroke="#2A2A2A"/>
+    <text x="640" y="461" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#FFFFFF">Lead Capture</text>
+    <text x="640" y="477" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A">structured extraction</text>
+  </g>
+  <line x1="360" y1="440" x2="440" y2="410" stroke="#3A3A3A" stroke-width="1.5"/>
+  <line x1="640" y1="440" x2="560" y2="410" stroke="#3A3A3A" stroke-width="1.5"/>
+
+  <line x1="500" y1="490" x2="500" y2="520" stroke="#3A3A3A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Output -->
+  <g>
+    <rect x="370" y="520" width="260" height="46" rx="4" fill="#101010" stroke="#FF7A00"/>
+    <text x="500" y="548" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" fill="#FF7A00">Localized Response</text>
+  </g>
+
+  <text x="30" y="600" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8A8A8A">deployed on Vercel serverless · production system, Haus of DADA</text>
+</svg>
