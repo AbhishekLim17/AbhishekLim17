@@ -85,14 +85,14 @@ Systems that ship and stay running.
 ## GitHub Analytics
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=AbhishekLim17&show_icons=true&hide_border=true&bg_color=050505&title_color=FF7A00&icon_color=FF7A00&text_color=8A8A8A&hide_title=false&rank_icon=github" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=AbhishekLim17&show_icons=true&hide_border=true&bg_color=050505&title_color=FF7A00&icon_color=FF7A00&text_color=8A8A8A&hide_title=false&rank_icon=github" alt="GitHub stats" />
   <img height="165" src="https://streak-stats.demolab.com/?user=AbhishekLim17&hide_border=true&background=050505&stroke=2A2A2A&ring=FF7A00&fire=FF7A00&currStreakLabel=FF7A00&sideLabels=8A8A8A&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8A8A8A" alt="GitHub streak stats" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhishekLim17&layout=compact&hide_border=true&bg_color=050505&title_color=FF7A00&text_color=8A8A8A" alt="Top languages" />
+  <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=AbhishekLim17&layout=compact&hide_border=true&bg_color=050505&title_color=FF7A00&text_color=8A8A8A" alt="Top languages" />
 </div>
 
 <br/><br/>
