@@ -1,106 +1,58 @@
 # Customization
 
-## Design tokens
+The README and every SVG in `/assets` are **generated** by one dependency-free
+script. Don't hand-edit them — change the source and rebuild:
 
-Every SVG in `/assets` uses the same fixed palette, hardcoded as hex values
-(SVGs embedded in a GitHub README can't reference external CSS variables,
-so there's no shared stylesheet — each file repeats these values directly).
+```bash
+node tools/build.mjs
+```
 
-| Token | Value | Used for |
-|---|---|---|
-| Background | `#050505` | canvas / page background |
-| Card | `#101010` | panels, boxes, chips |
-| Card Inner | `#0A0A0A` | card body backgrounds |
-| Border | `#2A2A2A` | strokes, dividers, box outlines |
-| Subtle Grid | `#141414` | background grid pattern lines |
-| Accent | `#FF7A00` | active nodes, highlighted boxes, key text |
-| Text | `#FFFFFF` | primary text |
-| Muted | `#8A8A8A` | secondary / caption text |
+Needs Node 18+. No `npm install`.
 
-To re-theme, find-and-replace these hex values across all files in
-`/assets`, plus the `title_color` / `icon_color` / `bg_color` query
-parameters on the GitHub Analytics image URLs in `README.md`.
+## What to edit in `tools/build.mjs`
 
-## SVG asset inventory
+| Block | Controls |
+|---|---|
+| `PALETTE` (`C`, `G`) | Colours. `G` is the five-step green ramp used by the banner mosaic and the fragment strips next to each heading. Swap it for any ramp (e.g. orange) to re-theme everything. |
+| `CONTENT` | All text: name, role, tagline, About blocks, links, focus chips, systems, principles, skills, footer. The README (including image alt text) is generated from the same data. |
+| `CONTENT.skills` | `icon` is a key in `tools/icons.json`; use `mono: 'AB', color: '#hex'` for a pixel-font monogram when there is no brand glyph. |
 
-| File | Purpose | Key elements |
-|---|---|---|
-| `hero.svg` | Top banner with name, title, neural network | Animated data-flow pulses, pulsing nodes |
-| `status-bar.svg` | Terminal-style status panel | Fade-in text rows, blinking cursor, scanline sweep |
-| `engineering-focus.svg` | Engineering focus dashboard (2×4 grid) | Left accent bars, staggered pulse, data-flow particle |
-| `selected-systems.svg` | Production system cards (2×2 grid) | Header bars, descriptions, tech indicators |
-| `tech-grid.svg` | Technology ecosystem (6 categories) | Category cards with tech badges, connecting particles |
-| `connect-bar.svg` | Contact links bar | GitHub, Email, LinkedIn with pulse indicators |
-| `divider.svg` | Section separator | Three-dot animated pattern |
-| `footer.svg` | Bottom banner | Runtime status, attribution |
+The mosaic and fragment strips are seeded by their text, so output is
+deterministic — rebuilding without changes produces identical files.
 
-## Editing the SVGs
+## Adding a brand icon
 
-All animation uses native SVG SMIL (`<animate>`, `<animateMotion>`) rather
-than CSS or JavaScript. This is a deliberate constraint, not an oversight:
+`tools/icons.json` holds the SVG path data (from [Simple Icons](https://simpleicons.org),
+CC0) for each icon used. To add one, copy its `{ title, hex, path }` entry into
+that file, then reference the key from `CONTENT.skills`.
 
-- GitHub sanitizes embedded SVGs and strips `<script>` tags entirely, so
-  JS-driven animation silently fails.
-- Some CSS animation techniques are also stripped or ignored depending on
-  how GitHub's sanitizer is configured at the time.
-- SMIL survives GitHub's sanitization consistently, which is why every
-  pulse, glow, and moving particle in this profile is built with it.
+## Generated files
 
-If you add new motion, keep it SMIL-based, and keep every SVG's outer
-`<rect>` background explicit (`fill="#050505"`) — without it, the graphic
-will look broken to anyone viewing your profile in GitHub's light theme.
+| File | Purpose |
+|---|---|
+| `assets/banner.svg` | Pixel-font name over a twinkling green mosaic (SMIL animation) |
+| `assets/about.svg` | Who I am / What I do / How I work |
+| `assets/connect.svg`, `assets/link-*.svg` | Connect heading + clickable link tiles |
+| `assets/contrib.svg` | Heading above the 3D contribution graph |
+| `assets/focus.svg` | Currently engineering |
+| `assets/systems.svg` | Selected systems |
+| `assets/principles.svg` | Engineering principles |
+| `assets/skills.svg` | Skill grid |
+| `assets/footer.svg` | Footer strip |
 
-## Editing content sections
+Animation uses native SVG SMIL (`<animate>`) — no CSS or JavaScript — because
+GitHub renders README images as inert `<img>` elements.
 
-`README.md` is organized as independent blocks separated by `divider.svg`.
-You can reorder, remove, or add blocks without touching the others. The
-sections as shipped:
+## 3D contribution graph
 
-1. Hero (`hero.svg`)
-2. AI System Status (`status-bar.svg` — animated terminal panel)
-3. About (plain text)
-4. Currently Engineering (`engineering-focus.svg` — 2×4 focus area grid)
-5. Selected Systems (`selected-systems.svg` — 2×2 production system cards)
-6. Engineering Principles (markdown table)
-7. Technology Ecosystem (`tech-grid.svg` — six category cards)
-8. GitHub Analytics (external stat card services)
-9. Connect (`connect-bar.svg` + text fallback links)
-10. Footer (`footer.svg`)
-11. Profile view counter (external badge service)
+`profile-3d-contrib/*.svg` is written by the
+`.github/workflows/profile-3d-contrib.yml` workflow (daily, on manual dispatch,
+and when that workflow file changes on `main`). It uses
+[github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib)
+with the built-in `GITHUB_TOKEN`, so no secrets are needed. Both actions in the
+workflow are pinned to commit SHAs; bump them deliberately.
 
-## Updating "Currently Engineering"
-
-The engineering focus areas in `assets/engineering-focus.svg` should reflect
-your current active domains. Update the card labels when your focus shifts.
-
-## Updating "Selected Systems"
-
-The system cards in `assets/selected-systems.svg` represent the types of
-production systems you build. Update titles, descriptions, and tech
-indicators when your portfolio evolves. Do not list specific client names
-— keep it focused on system types.
-
-## Updating contact details
-
-Contact information appears in two places:
-
-1. **`assets/connect-bar.svg`** — the visual SVG bar showing GitHub,
-   Email, and LinkedIn with animated indicators
-2. **`README.md`** — text fallback links below the SVG bar (these are the
-   actual clickable links since SVGs can't contain hyperlinks on GitHub)
-
-Update both when changing contact details.
-
-
-## GitHub Analytics URLs
-
-The profile uses three external card services:
-
-- **Stats card**: `github-readme-stats.vercel.app` — general GitHub stats
-- **Streak card**: `streak-stats.demolab.com` — contribution streak
-  (migrated from the deprecated `herokuapp.com` endpoint)
-- **Top Languages**: `github-readme-stats.vercel.app` — language breakdown
-- **View counter**: `komarev.com/ghpvc` — profile view badge
-
-If any of these services go down, the cards will show broken images.
-Consider self-hosting the stats services for long-term reliability.
+To run it on demand: **Actions → profile-3d-contrib → Run workflow**.
+To pick another style, change the filename in the README's `<img>` (the action
+also emits `profile-green-animate.svg`, `profile-season-animate.svg`,
+`profile-night-rainbow.svg`, and more).
