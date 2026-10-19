@@ -28,7 +28,7 @@ git push -u origin main
 Go to **Settings** on the repository page and update the description to:
 
 ```
-Founder · AI Engineer — building production AI systems
+AI ML Student — building production AI systems
 ```
 
 This text appears in search results, social previews, and the repository

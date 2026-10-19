@@ -35,7 +35,7 @@ const G = ['#1d4a1f', '#2c7a2a', '#45a336', '#6cc24a', '#9be36f'];
 /* ------------------------------------------------------------------ CONTENT */
 const CONTENT = {
   name: 'ABHISHEK LIMBACHIYA',
-  role: 'FOUNDER / AI ENGINEER',
+  role: 'AI ML Student', // drawn uppercase by the pixel font
   tagline: 'building production AI systems — routing, agents, automation',
   about: [
     {
@@ -310,7 +310,7 @@ function banner() {
     `<g font-family="${MONO}">${lines([tag], 24, 214, { size: 12.5, cw: 7.5, fill: C.muted })}</g>` +
     `<rect x="${24 + tag.length * 7.5 + 8}" y="203" width="8" height="14" fill="${C.accent}"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1.1s" repeatCount="indefinite"/></rect>` +
     pixelText(CONTENT.role, W - 24 - pixelWidth(CONTENT.role, 2), 203, 2, C.cream);
-  emit('banner.svg', W, H, `${CONTENT.name} — ${CONTENT.role}`, `${CONTENT.name} — ${CONTENT.role}. ${tag}.`, body);
+  emit('banner.svg', W, H, `${CONTENT.name} — ${CONTENT.role}`, `${CONTENT.name} — ${CONTENT.role}. ${tag[0].toUpperCase() + tag.slice(1)}.`, body);
 }
 
 /* -------------------------------------------------------------- ABOUT CARD */
